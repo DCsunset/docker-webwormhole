@@ -27,6 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags:
-            - dcsunset/webwormhole:${{ steps.date.outputs.date }}
-            - dcsunset/webwormhole:latest
+          tags: dcsunset/webwormhole:${{ steps.date.outputs.date }},dcsunset/webwormhole:latest
